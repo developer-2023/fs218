@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object methods</title>
+</head>
+<body>
+    
+    <script>
+        let phone = {
+            brand: "Sony",
+            system: "Android",
+            price: 500,
+            connect: function(msg) {
+                console.log("I am sending a message:", msg);
+            },
+            getInfo: function() {
+                console.log(this.brand, this.system, this.price);
+            }
+        }
+
+        phone.connect("Hello!");
+        phone.getInfo();
+    </script>
+</body>
+</html>
